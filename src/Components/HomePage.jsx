@@ -1,6 +1,7 @@
 import React from 'react';
 import { GraduationCap, FileText, CheckCircle, Clock, Shield, Zap, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 function HomePage() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-indigo-950 via-purple-900 to-pink-900 text-white overflow-hidden">
@@ -20,7 +21,7 @@ function HomePage() {
                 <FileText className="w-6 h-6 text-indigo-950" />
               </div>
               <span className="text-2xl font-bold bg-gradient-to-r from-teal-300 via-emerald-300 to-green-300 bg-clip-text text-transparent">
-                Form Wallah
+                FILL IT
               </span>
             </Link>
             
@@ -63,10 +64,12 @@ function HomePage() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <NavLink to ="/Form">
             <button className="bg-gradient-to-r from-teal-400 via-emerald-400 to-green-400 text-indigo-950 px-8 py-4 rounded-full text-lg font-bold shadow-2xl shadow-teal-500/50 flex items-center gap-2">
               Start Filling Forms
               <ArrowRight />
             </button>
+            </NavLink>
             <button className="px-8 py-4 rounded-full text-lg font-semibold border-2 border-teal-400 shadow-lg shadow-teal-500/30">
               Watch Demo
             </button>
@@ -243,9 +246,11 @@ function HomePage() {
             <p className="text-xl text-gray-200 mb-8">
               Join thousands of students who trust Form Wallah for their exam applications
             </p>
+            <NavLink to="/Form">
             <button className="bg-gradient-to-r from-teal-400 via-emerald-400 to-green-400 text-indigo-950 px-10 py-4 rounded-full text-lg font-bold shadow-2xl shadow-teal-500/50">
               Fill Your First Form Now
             </button>
+            </NavLink>
           </div>
         </div>
       </section>
